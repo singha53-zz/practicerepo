@@ -1,11 +1,12 @@
 {
   "name": "practicerepo",
-  "version": "0.0.0-practicerepo",
+  "version": "0.0.0-development",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/singha53/practicerepo#readme",
   "devDependencies": {
+    "travis-deploy-once": "^5.0.11",
     "semantic-release": "^15.13.1"
   }
 }
